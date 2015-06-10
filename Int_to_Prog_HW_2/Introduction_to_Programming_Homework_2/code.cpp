@@ -1,5 +1,3 @@
-// Fatih Bozik
-// 1358120003
 // Date : 13.05.2013
 // Development Environment : Visual Studio 2012
 
@@ -29,7 +27,7 @@ void main()
 			for (int j = 0; j <= 9; j++)
 			{
 				fscanf(fp, "%c", &matrix[i][j]);
-				fseek(fp, 1, SEEK_CUR); // boþluklar için imleci 1 arttýr.
+				fseek(fp, 1, SEEK_CUR); // boÃ¾luklar iÃ§in imleci 1 arttÃ½r.
 
 				if (matrix[i][j] == '1')
 				{
@@ -40,7 +38,7 @@ void main()
 					coor_x[coorx++] = j;
 				}
 			}
-			fseek(fp, 1, SEEK_CUR); // bir alt satýr için imleci 1 arttýr.
+			fseek(fp, 1, SEEK_CUR); // bir alt satÃ½r iÃ§in imleci 1 arttÃ½r.
 
 		}
 
@@ -64,9 +62,9 @@ void main()
 			coor_y[j] += changing_y;
 		}
 
-		matrixReset(matrix, 10); // matrisi sýfýrla.
+		matrixReset(matrix, 10); // matrisi sÃ½fÃ½rla.
 
-		// 1 olan koordinatlarý bul.
+		// 1 olan koordinatlarÃ½ bul.
 		for (int t = 0; t <= 3; t++)
 		{
 			if (coor_x[t] <= 9 && coor_y[t] <= 9)
